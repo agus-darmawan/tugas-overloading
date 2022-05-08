@@ -101,9 +101,9 @@ int main(){
                             std::cout << "Nilai " << index[pilihan-1] << " Objek : " << pp1[pilihan] << std::endl;
                             std::cout << "Nilai " << index[pilihan-1] << " Objek : " << pp2[pilihan] << std::endl;
                             if (pp1[pilihan] > pp2[pilihan]){
-                                std::std::cout << index[pilihan-1] << " Pp1 lebih besar dari " << index[pilihan-1] << " Pp2" << std::endl;
+                                std::std::cout << index[pilihan-1] << " Objek 1 lebih besar dari " << index[pilihan-1] << " Objek 1" << std::endl;
                             }else if(pp2[pilihan] > pp1[pilihan]){
-                                std::std::cout << index[pilihan-1] << " Pp2 lebih besar dari " << index[pilihan-1] << " Pp1" << std::endl;;
+                                std::std::cout << index[pilihan-1] << " Objek 2 lebih besar dari " << index[pilihan-1] << " Objek 1" << std::endl;;
                             }else{
                                 std::cout << "Kedua " << index[pilihan-1] << " sama" << std::endl;
                             }
