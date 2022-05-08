@@ -95,17 +95,19 @@ int main(){
                     break;
                 case 6:
                     {
-                        std::cout << "======================= OPERATOR [] ====================" << std::endl;
-                        std::cout << "Nilai X Maks obj1 : " << obj1[2] << std::endl;
-                        std::cout << "Nilai X Maks obj2 : " << obj2[2] << std::endl;
-                        if (obj1[2] > obj2[2]){
-                            std::cout << "X Maks Objek 1 lebih besar dari X Maks Objek 2";
-                        }
-                        else if(obj2[2] > obj1[2]){
-                            std::cout << "X Maks Objek 2 lebih besar dari X Maks Objek 1";
-                        }
-                        else{
-                            std::cout << "Kedua X Maks sama";
+                        const char *index[4] = {"xMin", "xMaks", "yMin", "yMaks"};
+                        std::cout<<"OPERATOR [] Perbandingan antar objek"<<std::endl;
+                        for (int pilihan = 1; pilihan < 5; pilihan++{
+                            std::cout << "Nilai " << index[pilihan-1] << " Objek : " << pp1[pilihan] << std::endl;
+                            std::cout << "Nilai " << index[pilihan-1] << " Objek : " << pp2[pilihan] << std::endl;
+                            if (pp1[pilihan] > pp2[pilihan]){
+                                std::std::cout << index[pilihan-1] << " Pp1 lebih besar dari " << index[pilihan-1] << " Pp2" << std::endl;
+                            }else if(pp2[pilihan] > pp1[pilihan]){
+                                std::std::cout << index[pilihan-1] << " Pp2 lebih besar dari " << index[pilihan-1] << " Pp1" << std::endl;;
+                            }else{
+                                std::cout << "Kedua " << index[pilihan-1] << " sama" << std::endl;
+                            }
+                            std::cout<<std::endl;
                         }
                     }
                     break;
