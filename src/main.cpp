@@ -2,6 +2,13 @@
 #include <string>
 #include "include/rectangular.hpp"
 
+
+
+void endProgram();
+void startProgram();
+void clear();
+int optionthis();
+void input();
 float length, 
     width,
     midpoint_x, 
@@ -97,13 +104,13 @@ int main(){
                     {
                         const char *index[4] = {"xMin", "xMaks", "yMin", "yMaks"};
                         std::cout<<"OPERATOR [] Perbandingan antar objek"<<std::endl;
-                        for (int pilihan = 1; pilihan < 5; pilihan++{
-                            std::cout << "Nilai " << index[pilihan-1] << " Objek : " << pp1[pilihan] << std::endl;
-                            std::cout << "Nilai " << index[pilihan-1] << " Objek : " << pp2[pilihan] << std::endl;
-                            if (pp1[pilihan] > pp2[pilihan]){
-                                std::std::cout << index[pilihan-1] << " Objek 1 lebih besar dari " << index[pilihan-1] << " Objek 1" << std::endl;
-                            }else if(pp2[pilihan] > pp1[pilihan]){
-                                std::std::cout << index[pilihan-1] << " Objek 2 lebih besar dari " << index[pilihan-1] << " Objek 1" << std::endl;;
+                        for (int pilihan = 1; pilihan < 5; pilihan++ ){
+                            std::cout << "Nilai " << index[pilihan-1] << " Objek : " << obj1[pilihan] << std::endl;
+                            std::cout << "Nilai " << index[pilihan-1] << " Objek : " << obj2[pilihan] << std::endl;
+                            if (obj1[pilihan] > obj2[pilihan]){
+                                std::cout << index[pilihan-1] << " Objek 1 lebih besar dari " << index[pilihan-1] << " Objek 1" << std::endl;
+                            }else if(obj2[pilihan] > obj1[pilihan]){
+                                std::cout << index[pilihan-1] << " Objek 2 lebih besar dari " << index[pilihan-1] << " Objek 1" << std::endl;;
                             }else{
                                 std::cout << "Kedua " << index[pilihan-1] << " sama" << std::endl;
                             }
